@@ -16,11 +16,12 @@
         }
         .card-glow {
             border: 1px solid transparent;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
         }
         .card-glow:hover {
             border-color: rgba(56, 189, 248, 0.3);
             box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
+            transform: translateY(-5px);
         }
         .fade-in-section {
             opacity: 0;
@@ -75,7 +76,7 @@
             <div class="mt-10 flex flex-wrap justify-center items-center gap-x-6 gap-y-4 text-gray-400">
                 <span class="flex items-center"><svg class="w-5 h-5 mr-2 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>Los Angeles, CA</span>
                 <a href="mailto:hemanth_karnataka@csu.fullerton.edu" class="flex items-center hover:text-cyan-400 transition-colors"><svg class="w-5 h-5 mr-2 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>hemanth_karnataka@csu.fullerton.edu</a>
-                <a href="#" class="flex items-center hover:text-cyan-400 transition-colors"><svg class="w-5 h-5 mr-2 text-cyan-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>LinkedIn</a>
+                <a href="https://www.linkedin.com/in/karnataka-hemanth-04536119a/" target="_blank" rel="noopener noreferrer" class="flex items-center hover:text-cyan-400 transition-colors"><svg class="w-5 h-5 mr-2 text-cyan-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>LinkedIn</a>
             </div>
         </section>
 
@@ -83,7 +84,6 @@
         <section id="projects" class="py-16 fade-in-section">
             <h3 class="text-3xl sm:text-4xl font-bold text-center text-white mb-12 text-glow">Featured Projects</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project Cards -->
                 <div class="bg-gray-800/50 rounded-lg p-6 card-glow">
                     <h4 class="text-xl font-bold text-cyan-400">Financial Insights WebApp (Gen AI)</h4>
                     <p class="text-sm text-gray-500 mb-3">LLM, Langchain, React.js, Pinecone</p>
@@ -116,7 +116,6 @@
         <section id="experience" class="py-16 fade-in-section">
             <h3 class="text-3xl sm:text-4xl font-bold text-center text-white mb-12 text-glow">Professional Experience</h3>
             <div class="space-y-12">
-                <!-- Experience Items -->
                  <div class="bg-gray-800/50 rounded-lg p-6 sm:p-8 card-glow">
                     <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
                         <h4 class="text-xl sm:text-2xl font-bold text-cyan-400">Software Engineer</h4>
@@ -149,7 +148,6 @@
         <section id="skills" class="py-16 fade-in-section">
             <h3 class="text-3xl sm:text-4xl font-bold text-center text-white mb-12 text-glow">Technical Skills</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
-                <!-- Skill Cards -->
                 <div class="bg-gray-800/50 p-6 rounded-lg card-glow">
                     <h4 class="text-xl font-semibold text-cyan-400 mb-2">Programming</h4>
                     <p class="text-gray-400">Python, Java, JavaScript, TypeScript, C++</p>
@@ -180,13 +178,12 @@
         <!-- Education & Certifications Section -->
         <section id="education" class="py-16 fade-in-section">
              <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <!-- Education -->
                 <div class="text-center">
                     <h3 class="text-3xl font-bold text-white mb-8 text-glow">Education</h3>
                      <div class="bg-gray-800/50 rounded-lg p-6 mb-6 card-glow">
                         <h4 class="text-xl font-bold text-cyan-400">Master of Science in Computer Science</h4>
                         <p class="text-gray-400">California State University, Fullerton</p>
-                        <p class="text-gray-500">May 2025</p>
+                        <p class="text-gray-500">Expected May 2025</p>
                     </div>
                      <div class="bg-gray-800/50 rounded-lg p-6 card-glow">
                         <h4 class="text-xl font-bold text-cyan-400">Bachelor of Technology in Computer Science</h4>
@@ -194,7 +191,6 @@
                         <p class="text-gray-500">July 2020</p>
                     </div>
                 </div>
-                <!-- Certifications -->
                 <div class="text-center">
                     <h3 class="text-3xl font-bold text-white mb-8 text-glow">Certifications</h3>
                     <div class="bg-gray-800/50 rounded-lg p-6 h-full flex flex-col justify-center items-center card-glow">
